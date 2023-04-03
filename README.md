@@ -17,7 +17,12 @@
 —> then run “flutter pub get” and then run these command “flutter pub run flutter_launcher_icons:main”
 
 ## Step 2 :-  Add App name
-—> Go to android\app\src\main\AndroidManifest.xml and change the android label,
+—> Go to android\app\src\main\AndroidManifest.xml and change the android label,   
+—> To add app name and unique bundle id and application id we can use rename package, run following commands to install rename package. 
+	
+	— flutter pub global activate rename  (activate rename package). 
+	— flutter pub global run rename --appname yourappname	(rename app name). 
+	— flutter pub global run rename --bundleId com.onatcipli.networkUpp	(rename bundle id)  
 
 ### NOTE :— We need Keystore to publish app on play store 
 
@@ -37,8 +42,8 @@ keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000
 ## Step 4 :- Create a Keystore reference inside your app
   —> Create a file inside <app dir>/android/key.properties that contains a reference to your Keystore:  
 ```
-			storePassword=testpassword
-			keyPassword=testpassword
+			storePassword=testpassword (password should be same, as per key store file)
+			keyPassword=testpassword. (password should be same, as per key store file)
 			keyAlias=testkey
 			storeFile=D:/keystore.jks  //your_home_directory
 ```
