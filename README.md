@@ -14,7 +14,12 @@
 		iOS: true
 		image_path: “your_image_path”
   ```
-—> then run “flutter pub get” and then run these command “flutter pub run flutter_launcher_icons:main”
+—> then run and then run these command
+```
+flutter pub get
+
+flutter pub run flutter_launcher_icons:main
+```
 
 ## Step 2 :-  Add App name
 —> Go to android\app\src\main\AndroidManifest.xml and change the android label,   
