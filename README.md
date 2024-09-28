@@ -29,6 +29,12 @@ flutter pub run flutter_launcher_icons:main
 	— flutter pub global run rename --appname yourappname	(rename app name). 
 	— flutter pub global run rename --bundleId com.onatcipli.networkUpp	(rename bundle id)  
 
+-> Manual Method to change Package Name and also change android label
+
+ 	- android/app/build.gradle
+  	- android/app/src/main/kotlin/com/example/test_app/MainActivity.kt
+   	- android/app/src/main/AndroidManifest.xml
+
 ### NOTE :— We need Keystore to publish app on play store 
 
 ## Step 3 :- Create  a Keystore
