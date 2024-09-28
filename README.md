@@ -1,5 +1,7 @@
 # Build Release app for Android & iOS :—
 
+[Go To Android Doc](AndroidProcess.md)
+
 ## Android
 
 ## Step 1 :-  Add Your App Icon
